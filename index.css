@@ -148,6 +148,7 @@ header {
     background: #1d4ed8;
 }
 
+/*About me+skills*/
 .about {
     display: flex;
     flex-direction: column;
@@ -193,6 +194,60 @@ header {
     border-radius: 999px;
     height: 100%;
 
+}
+
+#projects {
+    background: #f3f6fb;
+
+}
+
+/* Title centered */
+.projects h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.container.projects {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Flex container */
+.projects-flex .card {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.projects-flex .card .card-img,
+.projects-flex .card .card-body {
+
+    width: 100%;
+}
+
+.card {
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+}
+
+.card-body {
+    padding: 1.2rem;
+}
+
+/* Orange button */
+.project-btn button {
+    width: 100%;
+    /* mobile: full width like screenshot */
+    background: #f59e0b;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    font-weight: 700;
+    cursor: pointer;
 }
 
 @media(min-width:901px) {
