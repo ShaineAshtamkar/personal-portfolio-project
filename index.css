@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+}
+
+header,
+footer,
+nav,
+main {
+    border: solid;
+}
+
+body {
+    margin: 0;
+    font-family: system-ui, Arial, sans-serif;
+    line-height: 1.5;
+    color: #111827;
+    background: #ffffff;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {}
