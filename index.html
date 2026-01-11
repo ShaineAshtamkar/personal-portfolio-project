@@ -11,7 +11,7 @@
 <body>
     <!-- HEADER -->
     <header>
-        <div class="container nav">
+        <div id="home" class="container nav">
             <a class="logo" href="#home">Shaine Ashtamkar</a>
             <nav class="menu">
                 <ul class="nav-links">
@@ -22,24 +22,27 @@
                 </ul>
             </nav>
             <!-- Mobile hamburger icon -->
-            <div class="mobile-menu">
-                <button class="hamburger">
-                    <span></span><span></span><span></span>
-                </button>
-                <nav class="mobile-nav open">
-                    <a href="#home">Home</a>
-                    <a href="#about">About</a>
-                    <a href="#projects">Projects</a>
-                    <a href="#contact">Contact</a>
-                </nav>
-            </div>
+            <!-- Mobile hamburger (hovering opens menu) -->
+            <a class="hamburger" href="#mobileMenu">
+                <span></span><span></span><span></span>
+            </a>
+
+            <!-- Mobile menu (hidden until hovered) -->
+            <nav id="mobileMenu">
+                <a href="#" class="close">X</a>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+
         </div>
     </header>
 
 
     <main>
         <!-- Entity Section -->
-        <section id="home">
+        <section id="entity">
             <div class="container entity">
                 <div class="entity-text">
                     <h1>Full-Stack Developer</h1>

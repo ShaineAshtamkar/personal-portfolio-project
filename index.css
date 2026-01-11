@@ -13,6 +13,7 @@ body {
     line-height: 1.6;
     color: #111827;
 
+
 }
 
 /* heading sizes (guideline) */
@@ -40,6 +41,23 @@ a {
     color: inherit;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Mobile dropdown menu (hidden until I click) */
+#mobileMenu {
+    display: none;
+
+}
+
+/* whe */
+#mobileMenu:hover {
+    display: block;
+}
+
 
 header {
 
@@ -51,13 +69,124 @@ header {
 
 }
 
-
-.nav {
+.container {
+    margin: 10px 20px;
     display: flex;
     justify-content: space-between;
+}
+
+.logo {
+    font-weight: 700;
+    color: #2563eb;
+    font-size: large;
+    margin: 15px;
+
 
 }
 
+/* Desktop menu hidden on mobile-MOBILE FIRST */
 .menu {
     display: none;
+}
+
+
+.hamburger {
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+
+.hamburger span {
+    display: block;
+    width: 26px;
+    height: 3px;
+    margin: 5px 0;
+    background: #6b7280;
+    border-radius: 2px;
+}
+
+#entity {
+    background: #f3f6fb;
+}
+
+.entity {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.entity-pic {
+    margin-top: 30px;
+
+}
+
+.entity-pic img {
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto;
+
+}
+
+.entity-text {
+    text-align: center;
+
+}
+
+.contact-btn button {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 0.9rem 1.2rem;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+
+}
+
+.contact-btn button:hover {
+    background: #1d4ed8;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+@media(min-width:901px) {
+    .menu {
+        display: block;
+
+    }
+
+    .nav-links {
+        display: flex;
+        gap: 24px;
+        list-style: none;
+    }
+
+    .hamburger {
+        display: none;
+        /* not used on desktop */
+    }
+
+    .mobile-nav {
+        display: none;
+        /* not used on desktop */
+    }
+}
+
+@media (min-width: 901px) {
+
+    .entity-text,
+    .entity-pic {
+        width: 50%;
+        text-align: left;
+    }
+
+    .entity {
+        flex-direction: row;
+    }
 }
