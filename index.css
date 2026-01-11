@@ -212,6 +212,7 @@ header {
     flex-direction: column;
 }
 
+
 /* Flex container */
 .projects-flex .card {
     display: flex;
@@ -248,6 +249,11 @@ header {
     border-radius: 8px;
     font-weight: 700;
     cursor: pointer;
+
+}
+
+.project-btn button:hover {
+    filter: brightness(0.95);
 }
 
 @media(min-width:901px) {
@@ -311,4 +317,34 @@ header {
         margin-left: 40px;
     }
 
+}
+
+@media(min-width:901px) {
+    .projects-flex {
+        flex-direction: row;
+        display: flex;
+        /* row of cards */
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+    }
+
+    .projects-flex .card {
+        width: calc((100% - 48px) / 3);
+    }
+
+    .btn.project-btn {
+        width: 43%;
+        /* mobile: full width like screenshot */
+        font-weight: 700;
+
+    }
+
+    .btn.project-btn button {
+        width: auto;
+        padding: 10px 14px;
+        font-size: 0.95rem;
+
+
+    }
 }
