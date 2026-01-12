@@ -53,11 +53,22 @@ img {
 
 }
 
-/* whe */
-#mobileMenu:hover {
-    display: block;
-}
+/*when clicking over hamburger , mobilemenu shows */
+#mobileMenu:target {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    /* putting it under the header  */
+    top: 70px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: white;
+    /* hides home section underneath */
+    padding: 24px;
+    z-index: 9999;
 
+}
 
 header {
 
