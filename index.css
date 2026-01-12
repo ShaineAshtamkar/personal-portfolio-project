@@ -355,6 +355,16 @@ a.social .in {
     fill: none;
 }
 
+/*reszing social media butttons*/
+.social a.social {
+    transition: transform 0.15s ease;
+    transform-origin: center;
+}
+
+.social a.social:hover {
+    transform: scale(1.15);
+}
+
 .contact.flex {
     display: flex;
     flex-direction: column;
@@ -387,6 +397,7 @@ footer {
     color: rgba(255, 255, 255, 0.9);
     font-size: 14px;
 }
+
 
 
 
