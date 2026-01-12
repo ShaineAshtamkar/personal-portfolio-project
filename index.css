@@ -163,7 +163,6 @@ header {
 .about {
     display: flex;
     flex-direction: column;
-    border: 2px solid red;
     padding: 30px;
 }
 
@@ -317,6 +316,8 @@ form button[type="submit"] {
     border-radius: 8px;
     cursor: pointer;
     width: 100%;
+    margin-top: 10px;
+
 }
 
 .contact button {
@@ -360,7 +361,7 @@ a.social .in {
 }
 
 .contact-info {
-    margin: 50px 0;
+    margin: 15px 0;
     align-items: center;
     text-align: center;
 }
@@ -496,5 +497,34 @@ footer {
 
     }
 
+    #contact form button[type="submit"] {
+        width: 40%;
 
+    }
+
+
+    .contact-info {
+        margin: 15px 0;
+        text-align: left;
+
+    }
+
+    .contact-item {
+        display: flex;
+        gap: 10px;
+    }
+
+    .contact-item .icon {
+        flex: 0 0 auto;
+    }
+
+    div.social {
+        margin: 0 0 px;
+        display: flex;
+        padding: 0;
+        justify-content: flex-start;
+        margin: 0;
+        padding: 0;
+
+    }
 }
