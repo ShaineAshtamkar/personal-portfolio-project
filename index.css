@@ -374,6 +374,19 @@ a.social .in {
 
 }
 
+footer {
+    background: #1f2c3f;
+    padding: 28px 16px;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.footer-inner {
+    margin: 0 auto;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 14px;
+}
+
 
 
 @media(min-width:901px) {
@@ -471,8 +484,17 @@ a.social .in {
     }
 }
 
+
 @media(min-width:901px) {
-    .contact form {
-        width: 100%;
+
+
+    .contact.flex {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 200px;
+
     }
+
+
 }
