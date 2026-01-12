@@ -332,6 +332,46 @@ form button[type="submit"] {
 
 .contact button:hover {
     background: #1d4ed8;
+
+}
+
+a.social {
+    background-color: #2563EB;
+    display: block;
+    border-radius: 50%;
+    width: 50px;
+    padding: 17px;
+
+}
+
+a.social img {
+
+    width: 100%;
+    fill: white;
+}
+
+a.social .in {
+    fill: none;
+}
+
+.contact.flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-info {
+    margin: 50px 0;
+    align-items: center;
+    text-align: center;
+}
+
+.social {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-content: center;
+    margin: 8px;
+
 }
 
 
@@ -358,6 +398,8 @@ form button[type="submit"] {
         /* not used on desktop */
     }
 }
+
+
 
 @media (min-width: 901px) {
 
